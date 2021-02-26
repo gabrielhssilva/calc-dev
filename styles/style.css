@@ -20,11 +20,20 @@ body {
 
 .frame-calc {
   position: relative;
-  height: 200px;
+  height: 230px;
   width: 235px;
-  bottom: 50%;
   background-color: #22252d;
   border-radius: 20px;
+  bottom: 0%;
+  animation: startFrame 1s forwards;
+}
+@keyframes startFrame {
+  0% {
+    bottom: 70%;
+  }
+  100% {
+    bottom: 50%;
+  }
 }
 
 .keys {
@@ -35,9 +44,19 @@ body {
   justify-content: center;
   height: 300px;
   width: 235px;
-  top: 140px;
   background-color: #292d36;
   border-radius: 20px;
+  top: 140px;
+  animation: startKeys 1s forwards;
+}
+@keyframes startKeys {
+  0% {
+    top: 200px;
+  }
+
+  100% {
+    top: 140px;
+  }
 }
 
 .box-keys {
@@ -65,6 +84,18 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  animation: startKey 900ms forwards;
+}
+@keyframes startKey {
+    0% {
+        transform: scale(0.2);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .key > .special {
