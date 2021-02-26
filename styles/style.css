@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e2e2e2;
+  font-family: "Inter", sans-serif;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.frame-calc {
+  position: relative;
+  height: 200px;
+  width: 235px;
+  bottom: 50%;
+  background-color: #22252d;
+  border-radius: 20px;
+}
+
+.keys {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 235px;
+  top: 140px;
+  background-color: #292d36;
+  border-radius: 20px;
+}
+
+.box-keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.key {
+  margin: 0px 7px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262a33;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.key > .special {
+  padding-bottom: 3px;
+}
+
+.key:hover {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.key:active {
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+}
+
+.operator {
+  color: #eb6666;
+}
+
+.function {
+  color: #26eac7;
+  padding-bottom: 1px;
+}
+
+.number {
+  color: white;
+}
